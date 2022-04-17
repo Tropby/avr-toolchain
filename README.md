@@ -74,6 +74,8 @@ Setup include directories in `c_cpp_properties.json`
     ]
 }
 ```
+
+Set defines to fit your CPU and Baud for VSCode IntelliSense in `c_cpp_properties.json`
 ```
 "defines": [
     "__AVR_ATmega328P__",
