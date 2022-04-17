@@ -49,8 +49,6 @@ Create a `config.cmake` file with the following content and change the parameter
 ```
 cmake_minimum_required(VERSION 3.0.0)
 
-###############################################################
-
 set(CMAKE_SYSTEM_NAME   Linux           )
 set(AVR_OPTIMISATION    s               )
 
@@ -76,4 +74,11 @@ Setup include directories in `c_cpp_properties.json`
     ]
 }
 ```
+```
+"defines": [
+    "__AVR_ATmega328P__",
+    "BAUD=9600"
+]
+```
+
 
