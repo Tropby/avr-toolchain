@@ -4,7 +4,7 @@ REM cleanup
 rmdir /q /s toolchain
 
 REM download
-set "download=bitsadmin /transfer myDownloadJob /download /priority normal"
+set "download=certutil.exe -urlcache -split -f"
 %download% "https://github.com/ZakKemble/avr-gcc-build/releases/download/v11.1.0-1/avr-gcc-11.1.0-x64-windows.zip" %cd%\download.zip
 
 REM unzip toolchain
