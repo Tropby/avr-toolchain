@@ -43,6 +43,8 @@ include("config.cmake")
 # Include AVR GCC 
 include("dep/cmake-avr/generic-gcc-avr.cmake")
 set(AVR_SIZE_ARGS)
+
+add_avr_executable(${PROJECT_NAME} ${SRC_FILES} ${AVR_LIBS})
 ```
 
 Create a `config.cmake` file with the following content and change the parameter to fit your AVR cpu
